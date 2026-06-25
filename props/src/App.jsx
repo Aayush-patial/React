@@ -1,5 +1,6 @@
 import Student from "./components/Student";
 import Products from "./data/Products";
+import Details from "./components/Details";
 function App (){
   let arr =["Aayush patial","Aniket Sharma","Chandu Sharma","Abhinandan Sharma","Suraj Jaswal"];
   
@@ -21,7 +22,9 @@ function App (){
       </div>
       );
     })}
+    <Details></Details>
     </>
+    
   )
 };
 
