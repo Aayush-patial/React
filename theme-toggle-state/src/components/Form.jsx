@@ -3,6 +3,7 @@ import { useState } from "react";
 function Form (){
     const [name,setName] =useState("");
     const [age,setAge] = useState("");
+    const [city,setCity] =useState("");
     return( 
         <>
         <label> Name:</label>
@@ -19,6 +20,12 @@ function Form (){
         onChange={(e) => setAge(e.target.value)}
         ></input>
         <h1>{age}</h1>
+
+        <label>City:</label>
+        <input type="text"
+        value={city}
+        onChange={(e) => setCity(e.target.value)} />
+        <h1> {city}</h1>
         </>
     )
 }
