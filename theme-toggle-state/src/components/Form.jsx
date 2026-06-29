@@ -13,7 +13,7 @@ function Form (){
         onChange={(e)=> setName(e.target.value)} 
         />
         <h1>{name}</h1>
-        <label > Age:</label>
+        <labeluse > Age:</labeluse>
         <input 
         type="number"
         value={age}
