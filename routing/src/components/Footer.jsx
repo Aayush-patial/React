@@ -1,7 +1,9 @@
 function Footer (){
     return (
         <>
-        <h1>This is footer</h1>
+       <a href="https://github.com/Aayush-patial/React.git" className="github">
+        <button>Github</button>
+       </a>
         </>
     )
 }

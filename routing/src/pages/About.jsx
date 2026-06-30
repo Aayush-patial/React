@@ -1,9 +1,22 @@
+import { useNavigate } from "react-router-dom";
+
 function About (){
+    const navigate = useNavigate();
     return (
         <>
-        <h1>This is an About page</h1>
+        <div className="about-container">
+        <h1>About us</h1>
+        <p>
+            Welcome to our Website! We aim to provide high-quality content and services.
+        </p>
+
+        <h2> Our Mission</h2>
+        <p>
+            To help users learn web development easilty and practically.
+        </p>
+        </div>
         </>
     )
 }
 
-export default About;
+export default About; 
