@@ -15,7 +15,7 @@
 }
 
 .navbar a{
-    color: purple;
+    color: whitesmoke;
 
 }
 
@@ -46,25 +46,43 @@
     margin-top: 10px;
 }
 
-.github{
-    background-color: #24292e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
+.links{
+    background-color:#161b22;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 10px 25px;
+    border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3 ease;
+    font-weight:500;
+    transition: all 0.3 ease;
+    
 }
 
-.github:hover{
-    background-color:#444c56 ;
+.links:hover{
+    background-color:#007acc; ;
+    color: #fff;
+    transform :translate(-3px);
+    box-shadow: 0 4px 10px rgba(35,134,54,0,4);
 }
 
 footer{
     margin: auto;
     padding-top:20px;
 }
+.footer {
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    padding:20px;
+    background-color:#0d1117;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+
 
 .contact-container{
     max-width: 900px;
@@ -96,10 +114,17 @@ form {
 }
 
 input textarea {
-    width: 300px;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+   padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input textarea:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
 }
 button{
     background-color: #6a0dad;
@@ -111,4 +136,24 @@ button{
 }
 button :hover{
     background-color: #8a2be2;
+}
+
+.content-grid{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width: 250px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    text-align:center;
+    background:#f9f9f9;
+}
+.card img{
+    width:100%;
+   margin-bottom:10px;
 }
