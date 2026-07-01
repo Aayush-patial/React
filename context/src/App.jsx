@@ -2,10 +2,10 @@ import Home from "./components/Home";
 import userContext from "./context/userContext";
 
 function App (){
-  let user ="Aayush";
+  let obj = {id: 12401596, name: "John Doe", email: "john.doe@example.com"};
   return (
     <>
-    <userContext.Provider value={user}>
+    <userContext.Provider value={obj}>
       <Home></Home>
     </userContext.Provider>
     </>

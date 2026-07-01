@@ -4,7 +4,9 @@ function Home(){
     const user= useContext(userContext);
     return(
         <>
-        <h1> Hello {user}</h1>
+        <h1> Hello {user.name}!</h1>
+        <p>ID: {user.id}</p>
+        <p>Email: {user.email}</p>
         </>
     )
 }
